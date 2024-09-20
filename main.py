@@ -6,6 +6,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms, models
+from pathlib import Path
 from PIL import Image
 from PyQt6.QtWidgets import QApplication, QLabel, QPushButton, QVBoxLayout, QWidget, QFileDialog, QProgressBar, QTextEdit, QSpinBox, QDoubleSpinBox, QFormLayout, QHBoxLayout
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
@@ -19,6 +20,7 @@ elif torch.backends.mps.is_available():
 else:
     device = torch.device("cpu")
 print(f"<環境檢測>\nPyTorch 版本: {torch.__version__}\n運行模式: {device}")
+current_directory = Path(__file__).resolve().parent
 
 # 模型訓練的工作線程
 class TrainThread(QThread):
@@ -92,7 +94,8 @@ class ImageClassifierApp(QWidget):
     def initUI(self):
         self.setWindowTitle(f"Nagato-Sakura-Image-Classification")
         self.setGeometry(100, 100, 500, 600)
-        self.setWindowIcon(QIcon(f"assets/icon/{self.version}.ico"))
+        icon_path = current_directory / "assets" / "icon" / f"{self.version}.ico"
+        self.setWindowIcon(QIcon(str(icon_path)))
         
         # 加載數據按鈕
         self.load_button = QPushButton('加載數據')

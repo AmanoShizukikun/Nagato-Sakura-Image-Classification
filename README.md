@@ -49,6 +49,9 @@ cd Nagato-Sakura-Image-Classification
 pip install -r requirements.txt
 ```
 
+## GUI 介面
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/blob/main/assets/samples/GUI.png)
+
 ## 待辦事項
 ## 致謝
 特別感謝以下項目和貢獻者：
