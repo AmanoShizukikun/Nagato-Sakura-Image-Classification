@@ -10,8 +10,23 @@
 Nagato-Sakura-Image-Classification 是「長門櫻計畫」的其中一個分支，是一個用來進行圖像分類的訓練程式
 
 ## 公告
+修改倉庫配置新增預設模型，針對「長門櫻-影像魅影」進行適配。
 
 ## 近期變動
+### 1.0.0 (2025 年 8 月 10 日)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/blob/main/assets/preview/1.0.0.jpg)
+### 重要變更
+- 【重大】更改訓練器可訓練的模型架構。
+- 【重大】修改倉庫配置新增預設模型，針對「長門櫻-影像魅影」擴充插件進行適配。
+### 新增功能
+- 【新增】可訓練模型架構新增 mobilenet_v3_small、efficientnet_b0、mobilenet_v2。
+- 【新增】可查看每個別的預測機率。
+- 【更新】對標籤文字解碼的容錯能力。
+- 【更新】優化 GUI 的操作並將訓練器功能分離。
+- 【修復】圖片預覽變形的問題。
+### 已知問題
+- N/A
+
 ### 0.0.1 (2024 年 9 月 20 日)
 ![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/blob/main/assets/preview/0.0.1.jpg)
 ### 重要變更
@@ -50,12 +65,16 @@ pip install -r requirements.txt
 ```
 
 ## GUI 介面
-![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/blob/main/assets/samples/GUI.png)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/blob/main/assets/samples/GUI_v1.0.0.png)
 
 ## 待辦事項
+-N/A
+
 ## 致謝
 特別感謝以下項目和貢獻者：
 ### 項目
+- [Nagato-Sakura-Image-Charm](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Charm)
+
 ### 貢獻者
 <a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Classification/graphs/contributors" target="_blank">
   <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Image-Classification" />

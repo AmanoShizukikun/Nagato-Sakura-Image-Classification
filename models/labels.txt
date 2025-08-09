@@ -1,0 +1,10 @@
+Kairitsu-HQ
+Kairitsu-LQ
+Kairitsu-MQ
+Kyouka-HQ
+Kyouka-LQ
+Kyouka-MQ
+NULL
+Ritsuka-HQ
+Ritsuka-LQ
+Ritsuka-MQ
